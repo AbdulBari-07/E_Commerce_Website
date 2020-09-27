@@ -1,0 +1,22 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" >
+        <div class="loginbox">
+    <img src="{% static 'images/avatar.png' %}" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <div id="showpwd">
+                <input type="password" name="" placeholder="Enter Password">
+            </div>
+            <input type="submit" name="" value="Login">
+            <a href="#">Forgot your password?</a><br>
+            <a href="{% url 'signup' %}">Don't have an account?</a>
+        </form>
+        
+    </div>
+
+{% endblock content %}
