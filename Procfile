@@ -1,2 +1,2 @@
-release: python3 manage.py migrate
-web: python3 scripts/start_server.py prod
+release: python manage.py migrate
+web: python manage.py runserver
